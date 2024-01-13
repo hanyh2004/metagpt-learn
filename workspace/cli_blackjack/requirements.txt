@@ -1,0 +1,8 @@
+"""
+unittest==1.0.0
+black==21.9b0
+isort==5.9.3
+mypy==0.910
+pylint==2.11.1
+pipenv==2021.5.29
+"""

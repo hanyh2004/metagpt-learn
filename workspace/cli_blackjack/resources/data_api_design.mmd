@@ -1,0 +1,21 @@
+classDiagram
+    class Game{
+        +list[Player] players
+        +list[Card] deck
+        +start_game()
+        +deal_card(Player)
+        +check_winner()
+    }
+    class Player{
+        +list[Card] hand
+        +int score
+        +hit()
+        +stand()
+    }
+    class Card{
+        +str rank
+        +str suit
+        +int value
+    }
+    Game "1" -- "*" Player: has
+    Player "1" -- "*" Card: has

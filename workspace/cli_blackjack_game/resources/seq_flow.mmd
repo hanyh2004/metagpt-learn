@@ -1,0 +1,30 @@
+sequenceDiagram
+    participant M as Main
+    participant G as Game
+    participant D as Deck
+    participant P as Player
+    participant Dl as Dealer
+    participant C as Card
+    participant U as Utils
+
+    M->>G: start_game()
+    G->>D: shuffle()
+    G->>P: set_balance()
+    G->>Dl: add_card()
+    G->>P: add_card()
+    G->>Dl: add_card()
+    G->>P: add_card()
+    G->>G: display_game()
+    G->>G: display_outcome()
+    G->>P: get_balance()
+    G->>P: set_balance()
+    G->>P: get_hand_value()
+    G->>P: add_card()
+    G->>P: clear_hand()
+    G->>Dl: get_hand_value()
+    G->>Dl: add_card()
+    G->>Dl: clear_hand()
+    G->>D: draw_card()
+    G->>C: get_value()
+    G->>C: __str__()
+    G->>U: calculate_hand_value()

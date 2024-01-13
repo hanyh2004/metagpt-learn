@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "metagpt-learn"
+version = "0.1.0"
+description = ""
+authors = ["samoslab <hanyh2004@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+qdrant-client = { version = "1.4.0", python = ">=3.7,<3.12" }
+metagpt = "0.4.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
